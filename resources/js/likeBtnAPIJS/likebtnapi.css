@@ -1,0 +1,29 @@
+#likebtnapi-main {
+    display: inline-block;
+    background: #fefefe;
+    border: 1px solid #95accb;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: sans-serif;
+    box-shadow: 0 0 17px rgb(170,189,214) inset;
+    color: #394e87;
+    cursor: pointer;
+    min-width: 51px;
+    user-select: none;
+}
+/*Custom CSS, make sure box-shadow: none; is included! */
+/*#likebtnapi-main {*/
+/*    padding: 10px 15px;*/
+/*    background: #0080ff;*/
+/*    font-size: 18px;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    border-radius: 5px;*/
+/*    color: #e8efff;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    box-shadow: none;*/
+/*}*/
+/*#likebtnapi-main span.likebtnapi-icon.clicked {*/
+/*    color: red;*/
+/*}*/
