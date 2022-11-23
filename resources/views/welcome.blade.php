@@ -1040,7 +1040,7 @@ font-family: sans-serif;"><span class="likebtnapi-icon"><svg style="display: inl
                 <ul class="list-reset mb-6">
                     <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                         <a
-                            href="#"
+                            href="https://github.com/Sid220/LikeBtnAPI/tree/master/public"
                             class="font-light no-underline hover:underline text-white opacity-75 hover:text-orange-500"
                         >GitHub</a
                         >

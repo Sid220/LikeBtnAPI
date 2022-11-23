@@ -11,7 +11,7 @@ class GetJSModule
 
     public function handle(string $website, array $options = []): string
     {
-        $path = public_path().'/LikeBtnAPIJS/likebtnapi.min.js';
+        $path = resource_path().'/js/likeBtnAPIJS/likebtnapi.min.js';
         if (File::exists($path)) {
             $raw = File::get($path);
             foreach ($options as $key => $option) {
