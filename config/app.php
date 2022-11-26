@@ -153,6 +153,7 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+    'cdn' => 'https://cdn.jsdelivr.net/gh/Sid220/cdn@main/LikeBtnAPI',
 
     'providers' => [
 

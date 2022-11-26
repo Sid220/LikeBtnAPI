@@ -32,15 +32,15 @@
                             <span class="inline-flex rounded-md">
                                     <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
                                         @if(App::currentLocale() == "en")
-                                            <img src="/cdn/img/gb.svg"> {{__("English")}}
+                                            <img src="{{ Config::get('app.cdn') }}/gb.svg" alt="UK flag"> {{__("English")}}
                                         @elseif(App::currentLocale() == "es")
-                                            <img src="/cdn/img/es.svg"> {{__("Spanish")}}
+                                            <img src="{{ Config::get('app.cdn') }}/es.svg" alt="Spain flag"> {{__("Spanish")}}
                                         @elseif(App::currentLocale() == "ja")
-                                            <img style="border: 0.5px solid grey; border-radius: 50%;" src="/cdn/img/jp.svg"> {{ __("Japanese") }}
+                                            <img style="border: 0.5px solid grey; border-radius: 50%;" src="{{ Config::get('app.cdn') }}/jp.svg" alt="Japan flag"> {{ __("Japanese") }}
                                         @elseif(App::currentLocale() == "fr")
-                                            <img src="/cdn/img/fr.svg"> {{ __("French") }}
+                                            <img src="{{ Config::get('app.cdn') }}/fr.svg" alt="France flag"> {{ __("French") }}
                                         @elseif(App::currentLocale() == "it")
-                                            <img src="/cdn/img/it.svg"> {{ __("Italian") }}
+                                            <img src="{{ Config::get('app.cdn') }}/it.svg" alt="Italy flag"> {{ __("Italian") }}
                                         @else
                                             {{ __("Language") }}
                                         @endif
@@ -55,27 +55,27 @@
 
                             @if(!(App::getLocale() == "en"))
                                 <x-jet-dropdown-link href="{{ LaravelLocalization::getLocalizedURL('en') }}">
-                                    <img src="/cdn/img/gb.svg"> {{ __("English") }}
+                                    <img src="{{ Config::get('app.cdn') }}/gb.svg" alt="UK flag"> {{ __("English") }}
                                 </x-jet-dropdown-link>
                             @endif
                             @if(!(App::getLocale() == "es"))
                                 <x-jet-dropdown-link href="{{ LaravelLocalization::getLocalizedURL('es') }}">
-                                    <img src="/cdn/img/es.svg"> {{ __("Spanish") }}
+                                    <img src="{{ Config::get('app.cdn') }}/es.svg" alt="Spain flag"> {{ __("Spanish") }}
                                 </x-jet-dropdown-link>
                             @endif
                             @if(!(App::getLocale() == "fr"))
                                 <x-jet-dropdown-link href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
-                                    <img src="/cdn/img/fr.svg"> {{ __("French") }}
+                                    <img src="{{ Config::get('app.cdn') }}/fr.svg" alt="France flag"> {{ __("French") }}
                                 </x-jet-dropdown-link>
                             @endif
                             @if(!(App::getLocale() == "ja"))
                                 <x-jet-dropdown-link href="{{ LaravelLocalization::getLocalizedURL('ja') }}">
-                                    <img style="border: 0.5px solid grey; border-radius: 50%;" src="/cdn/img/jp.svg"> {{ __("Japanese") }}
+                                    <img style="border: 0.5px solid grey; border-radius: 50%;" src="{{ Config::get('app.cdn') }}/jp.svg" alt="Japan flag"> {{ __("Japanese") }}
                                 </x-jet-dropdown-link>
                             @endif
                             @if(!(App::getLocale() == "it"))
                                 <x-jet-dropdown-link href="{{ LaravelLocalization::getLocalizedURL('it') }}">
-                                    <img src="/cdn/img/it.svg"> {{ __("Italian") }}
+                                    <img src="{{ Config::get('app.cdn') }}/it.svg" alt="Italy flag"> {{ __("Italian") }}
                                 </x-jet-dropdown-link>
                             @endif
 

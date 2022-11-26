@@ -278,7 +278,7 @@
 </head>
 
 <body class="gradient leading-relaxed tracking-wide flex flex-col">
-<div class="h-full" style="background-image: url('/cdn/img/header.png');background-repeat: no-repeat;background-size: cover; min-height: 100vh;">
+<div class="h-full" style="background-image: url('{{ Config::get('app.cdn') }}/header.png');background-repeat: no-repeat;background-size: cover; min-height: 100vh;">
     <!--Nav-->
     <div class="w-full container mx-auto">
         <div class="w-full flex items-center justify-between">
@@ -372,7 +372,7 @@ box-shadow: none;
 font-family: Helvetica, Arial, sans-serif;
 color: white;
 border-radius: 5px;
-border: 0;" class="my-6"><img style="display: inline;" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/FEppCFCt76d.png"> <span>2,423,245</span></div>
+border: 0;" class="my-6"><img style="display: inline;" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/FEppCFCt76d.png" alt="Like image"> <span>2,423,245</span></div>
                         </li>
                         <li>
                             <div class="my-6" style="display: inline-block;
@@ -443,7 +443,7 @@ box-shadow: none;
 font-family: Helvetica, Arial, sans-serif;
 color: white;
 border-radius: 5px;
-border: 0;" class="my-6"><img style="display: inline;" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/FEppCFCt76d.png"> <span>2,423,245</span></div>
+border: 0;" class="my-6"><img style="display: inline;" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/FEppCFCt76d.png" alt="Like image"> <span>2,423,245</span></div>
                         </li>
                         <li>
                             <div class="my-6" style="display: inline-block;
@@ -480,7 +480,7 @@ font-family: sans-serif;"><span class="likebtnapi-icon"><svg style="display: inl
 
         <!--Right Col-->
         <div class="w-full xl:w-3/5 p-12 overflow-hidden">
-            <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="/cdn/img/macbook.svg">
+            <img alt="Dashboard sneak-peek" class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="{{ Config::get('app.cdn') }}/macbook.svg">
         </div>
 
 {{--        <div class="mx-auto md:pt-16">--}}
@@ -843,7 +843,7 @@ font-family: sans-serif;"><span class="likebtnapi-icon"><svg style="display: inl
             class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4"
         >
 
-            <div style="background-image: url('/cdn/img/header.png');"
+            <div style="background-image: url('{{ Config::get('app.cdn') }}/header.png');"
                 class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white text-white mt-4 sm:-mt-6 gradient shadow hover:shadow-lg z-10"
             >
                 <div class="flex-1 rounded-t rounded-b-none overflow-hidden">
@@ -950,12 +950,12 @@ font-family: sans-serif;"><span class="likebtnapi-icon"><svg style="display: inl
 </section>
 
 <!--Footer-->
-<footer class="bg-black" style="background-image: url('/cdn/img/header.png'); background-position-y: center; background-repeat: no-repeat; background-size: cover; " >
+<footer class="bg-black" style="background-image: url('{{ Config::get('app.cdn') }}/header.png'); background-position-y: center; background-repeat: no-repeat; background-size: cover; " >
     <section class="w-full mx-auto text-center pt-6 pb-12">
         <h2
             class="w-full my-6 text-5xl font-black leading-tight text-center text-white"
         >
-            <img src="/cdn/img/logo.png"
+            <img src="{{ Config::get('app.cdn') }}/logo.webp" alt="LikeBtnAPI logo"
                  class="m-auto"
                  style="height: 48px"/>
         </h2>
@@ -986,7 +986,7 @@ font-family: sans-serif;"><span class="likebtnapi-icon"><svg style="display: inl
                     @include('vendor.jetstream.components.application-logo')
                 </a><br>
                 <a href="#" style="display: inline-block;" class="mr-3">
-                    <img style="height: 36px; border-radius: 4px;" src="/cdn/img/certified.png">
+                    <img style="height: 36px; border-radius: 4px;" src="https://cdn.jsdelivr.net/gh/Sid220/cdn@main/general/certified.webp" alt="A Vestal Project certification badge">
                 </a>
                 <div id="likebtnapi-main" style="position: relative; top: -6px;"></div>
                 <script src="/cdn/e858c0c2-0380-4a05-bf92-0cbab76696cf/likebtnapi.js?iconSet=fontawesome&likeSvg=&likeSvgFill=&likeText=Like&customCSS=%23likebtnapi-main+%7B++++padding%3A+10px+15px%3B++++background%3A+%230080ff%3B++++font-size%3A+18px%3B++++font-family%3A+%22Open+Sans%22%2C+sans-serif%3B++++border-radius%3A+5px%3B++++color%3A+%23e8efff%3B++++outline%3A+none%3B++++border%3A+none%3B++++cursor%3A+pointer%3B++++box-shadow%3A+none%3B++++%7D"></script>
