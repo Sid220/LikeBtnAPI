@@ -127,15 +127,20 @@
 {{--    </body>--}}
 {{--</html>--}}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LaravelLocalization::getCurrentLocale() }}">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LikeBtnAPI</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="LikeBtnAPI, a like button widget for any occasion." />
+    <meta name="keywords" content="like button widget API LikeBtnAPI" />
+    <meta name="author" content="The Fake Slim Shady" />
+    <link rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en') }}" />
+    <link rel="alternate" hreflang="es" href="{{ LaravelLocalization::getLocalizedURL('es') }}" />
+    <link rel="alternate" hreflang="fr" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" />
+    <link rel="alternate" hreflang="it" href="{{ LaravelLocalization::getLocalizedURL('it') }}" />
+    <link rel="alternate" hreflang="ja" href="{{ LaravelLocalization::getLocalizedURL('ja') }}" />
 
     <!-- Font Awesome if you need it
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
