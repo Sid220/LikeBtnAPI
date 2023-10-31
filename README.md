@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Sid220/cdn@main/LikeBtnAPI/logo.webp" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://likebtnapi.tk" target="_blank"><img src="https://cdn.jsdelivr.net/gh/Sid220/cdn@main/LikeBtnAPI/logo.webp" width="400" alt="Laravel Logo"></a></p>
 
 ## About LikeBtnAPI
 
